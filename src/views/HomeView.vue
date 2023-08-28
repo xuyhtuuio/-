@@ -116,6 +116,7 @@ export default {
         fetch(`http://localhost:8083/getErrorList`)
           .then((response) => response.json())
           .then((res) => {
+            console.log(res.data)
             this.tableData = res.data;
           });
       }, 500);
@@ -201,9 +202,10 @@ export default {
       });
     },
     codeErr() {
+      console.log(1111)
       this.getTableData();
-      let a = undefined;
-      if (a.length) {
+
+      if (b.length) {
         console.log('1');
       }
     },
